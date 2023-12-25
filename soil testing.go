@@ -31,11 +31,16 @@ const pylonsGadgetsLiteral_badHeader = `#test_gadget_with_bad_header 1 additiona
 					rcp.CostPerBlock.String(), strconv.FormatBool(rcp.Enabled), rcp.ExtraInfo,
 				})
 
-
+//heat losses
 const pylonsGadgetsLiteral_good = `#go_go_gadget_gadgets 3
 	"foo": "%0",
 	"bar": "%1",
 	"%2": "true"`
+
+			addr, err := k.GetAddress()
+			if err != nil {
+				return err
+			}
 
 
 const badRecipeLiteral = `
